@@ -1,0 +1,23 @@
+{
+  "name": "rspec-json-report-summariser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests",
+    "ci": "yarn install && mocha ./tests",
+    "prepare": "ncc build ./index.js -o dist --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "glob": "^7.2.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.33.3",
+    "mocha": "^9.2.1"
+  }
+}

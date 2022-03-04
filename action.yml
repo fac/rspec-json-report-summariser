@@ -1,0 +1,12 @@
+name: 'RSpec JSON Report Summariser'
+description: 'Combine JSON RSpec reports together'
+inputs:
+  file_globs:  # id of input
+    description: 'Files to combine'
+    required: true
+outputs:
+  summary:
+    description: 'The combined summary'
+runs:
+  using: 'node16'
+  main: 'index.js'
