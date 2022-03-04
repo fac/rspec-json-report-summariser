@@ -1,0 +1,1 @@
+# rspec-json-report-summariser
