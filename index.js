@@ -1,6 +1,7 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
 
+
 const json_spec_reporter_summariser = require("./lib/json_spec_reporter_summariser.js");
 
 try {
