@@ -2,7 +2,7 @@
   "name": "rspec-json-report-summariser",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha ./tests",
     "ci": "yarn install && mocha ./tests",
