@@ -24,6 +24,7 @@ jobs:
         uses: actions/setup-node@v2
 
       - run: |
+          yarn install
           yarn prepare
 
       # Compile dist/index.js and bundle with action.yml
