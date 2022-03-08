@@ -33,10 +33,3 @@ jobs:
       - uses: JasonEtco/build-and-tag-action@v2
         env:
           GITHUB_TOKEN: ${{ github.token }}
-
-      - name: Test new release
-        uses: fac/rspec-json-report-summariser@${{ github.event.release.tag_name }}
-        id: test-new-release
-        with:
-          file_globs: |-
-            ./tests/fixtures/**/*.json
