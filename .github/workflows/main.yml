@@ -19,7 +19,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Combine rspec reports
-        uses: fac/rspec-json-report-summariser@v0.5.3
+        uses: fac/rspec-json-report-summariser@v0.5.5
         id: rspec-report
         with:
           file_globs: |-
