@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha ./tests",
     "ci": "yarn install && mocha ./tests",
-    "prepare": "ncc build ./index.js -o dist --minify"
+    "prepare": "ncc build ./index.js -o dist --minify",
+    "build": "yarn install && ncc build ./index.js -o dist --minify"
   },
   "keywords": [],
   "author": "",
